@@ -2,6 +2,7 @@ UrlShortner
 ------------------------
 
 This is a web application written on *Pythoh*, *Flask* and *MySql Db*.
+
 *SQLAlchemy* is used as the ORM.
 
 It covers the following use-case:-
