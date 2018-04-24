@@ -31,7 +31,7 @@ Prerequisites:
 
 **Go into the Folder:-**
 
-`cd UrlShortner`
+`cd UrlShortner/`
 
 **Install Dependencies:-**
 
@@ -68,18 +68,19 @@ curl http://localhost:5000/<somecode>
 
 *On Success:*
 ```
-Status : 302,  Redirect to <Long Url>
+StatusCode : 302,  
+Redirecting to <Long Url>..
 ```
 
 *On Expire:*
 ```
-Status : 498,
+StatusCode : 498,
 {"message": "expired"}
 ```
 
 *On Wrong Short Url:*
 ```
-Status : 404
+StatusCode : 404
 {"message": "not found"}
 ```
 
