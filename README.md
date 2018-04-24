@@ -1,11 +1,11 @@
 UrlShortner
 ------------------------
 
-This is a web application written on *Pythoh*, *Flask* and *MySql Db*.
+This is a web application developed with *Python*, *Flask* and *MySql Db*.
 
 *SQLAlchemy* is used as the ORM.
 
-It covers the following use-case:-
+It covers the following use-cases:-
 
 - For every long url, return a short url, which when clicked on, should redirect to the longer url.
 
