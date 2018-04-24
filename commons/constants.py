@@ -6,7 +6,7 @@ DB_USERNAME = 'root'
 DB_PWD = 'root'
 DB_NAME = 'dev'
 
-URL_PREFIX = 'https://myurl.com/' #domain name
+URL_PREFIX = 'http://localhost:5000/' #domain name
 
 # gnearted candidates
 OFF_SET = 64 * 64
