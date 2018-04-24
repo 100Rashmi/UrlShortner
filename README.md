@@ -56,7 +56,10 @@ http://127.0.0.1:5000/create \
 ```
 **Response:-**
 
-`{"short_url": "http://localhost:5000/<somecode>"}` 
+```
+StatusCode : 201
+{"short_url": "http://localhost:5000/<somecode>"}
+``` 
 
 
 - **2. GET:** Hit the Short Url
