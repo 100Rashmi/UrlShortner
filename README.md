@@ -91,7 +91,7 @@ Data Model:
 -----------------
 
 
-- Table : shortend_url
+- Table : ~urlinfo~
 
 | Field          | Type          | Null | Key | Default | Extra |
 |----------------|---------------|------|-----|---------|-------|
