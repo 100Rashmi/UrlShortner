@@ -52,7 +52,7 @@ API Documentation
 ```
 curl -X POST \
 http://127.0.0.1:5000/create \
--d '{ "long_url" : 'https://github.com/100Rashmi/UrlShortner'}'
+-d '{ "long_url" : "https://github.com/100Rashmi/UrlShortner"}'
 ```
 **Response:-**
 
