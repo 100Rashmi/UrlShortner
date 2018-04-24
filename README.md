@@ -37,6 +37,10 @@ Prerequisites:
 
 `pip install -r requirements.txt`
 
+**Configure Mysql:-**
+
+In  [commons/constants.py file here.](https://github.com/100Rashmi/UrlShortner/blob/master/commons/constants.py#L4) 
+
 **Run the App:-**
 
 `python flaskapp.py`
