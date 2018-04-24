@@ -10,8 +10,10 @@ It covers the following use-cases:-
 - For every long url, return a short url, which when clicked on, should redirect to the longer url.
 
 - This short url should be used only once.
-  In case of multiple concurrent requests trying to access the same short url, only the first request should be redirected and the url should be epired. 
-  All the rest of the requests should error out.
+ 
+ In case of multiple concurrent requests trying to access the same short url, only the first request should be redirected and the url should be expired. 
+ 
+ All the rest of the requests should error out.
   
  
 Build & Run Instructions
