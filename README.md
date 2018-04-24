@@ -45,6 +45,7 @@ The application starts at http://localhost:5000/
 API Documentation
 ---------------------------
 - **POST** Create Short Url
+
 **Request:-**
 ```
 curl -X POST \
