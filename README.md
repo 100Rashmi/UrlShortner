@@ -13,6 +13,26 @@ It covers the following use-case:-
   All the rest of the requests should error out.
   
  
- Build Instructions
- --------------------
- 
+Build & Run Instructions
+--------------------
+
+Prerequisites:
+   - Python, 
+   - Git,
+   - pip
+
+**Clone Repository:-**
+
+`git clone https://github.com/100Rashmi/UrlShortner.git`
+
+**Go into the Folder:-**
+
+`cd UrlShortner`
+
+**Install Dependencies:-**
+
+`pip install -r requirements.txt`
+
+**Run the App:-**
+
+`python flaskapp.py`
