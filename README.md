@@ -91,7 +91,7 @@ Data Model:
 -----------------
 
 
-- Table : ~urlinfo~
+- Table : `urlinfo`
 
 | Field          | Type          | Null | Key | Default | Extra |
 |----------------|---------------|------|-----|---------|-------|
