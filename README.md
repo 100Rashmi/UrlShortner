@@ -23,6 +23,7 @@ Prerequisites:
    - Python
    - Git
    - pip
+   - MySql
 
 **Clone Repository:-**
 
@@ -44,21 +45,23 @@ The application starts at http://localhost:5000/
 
 API Documentation
 ---------------------------
-- **POST** Create Short Url
+- **1. POST /create** Create Short Url
 
 **Request:-**
+
 ```
 curl -X POST \
 http://127.0.0.1:5000/create \
 -d '{ "long_url" : 'https://github.com/100Rashmi/UrlShortner'}'
 ```
 **Response:-**
+
 `{"short_url": "http://localhost:5000/<somecode>"}` 
 
 
-- **GET:** Hit the Short Url
+- **2. GET:** Hit the Short Url
 ```
-curl http://localhost:5000/somecode
+curl http://localhost:5000/<somecode>
 ```
 
 **Response**
