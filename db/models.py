@@ -10,6 +10,7 @@ class ShortendUrl(Base):
     status = Column(String(30))
     long_url = Column(String(2500))
     created_time = Column(DateTime)
+    updated_time = Column(DateTime)
     short_url = Column(String(10), unique=True)
 
 

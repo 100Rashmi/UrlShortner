@@ -12,6 +12,7 @@ def create_shortend_url(long_url):
     shorturl.long_url = long_url
     shorturl.created_time = datetime.utcnow()
     shorturl.status = constants.Status.INITIALIZE
+    shorturl.updated_time = datetime.utcnow()
 
     db_session = db_connection().get_session()
 
@@ -21,7 +22,10 @@ def create_shortend_url(long_url):
     url_id = shorturl.url_id
     encoded_path = str(convert_To_base_64(url_id))
 
-    updated_response = db_session.query(ShortendUrl).filter(ShortendUrl.url_id == url_id).update({ShortendUrl.status:constants.Status.ACTIVE, ShortendUrl.short_url: encoded_path})
+    updated_time = datetime.utcnow()
+    updated_response = db_session.query(ShortendUrl).filter(ShortendUrl.url_id == url_id).update({ShortendUrl.status:constants.Status.ACTIVE,
+                                                                                                  ShortendUrl.short_url: encoded_path,
+                                                                                                  ShortendUrl.updated_time: updated_time})
     db_connection().commit()
 
     shorturl = URL_PREFIX+encoded_path
@@ -32,9 +36,10 @@ def redirect_url(shortpath):
     db_session = db_connection().get_session()
 
     try:
+        updated_time = datetime.utcnow()
         updated_count = db_session.query(ShortendUrl).filter(ShortendUrl.short_url == shortpath,
                                                              ShortendUrl.status == constants.Status.ACTIVE) \
-            .update({ShortendUrl.status: constants.Status.EXPIRED})
+            .update({ShortendUrl.status: constants.Status.EXPIRED,ShortendUrl.updated_time: updated_time})
         db_connection().commit()
 
         # case: when two user hit same time for same shortend url

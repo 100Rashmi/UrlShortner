@@ -1,7 +1,6 @@
-flask-restful
+flask
+flask_restful
 flask-cors
 sqlalchemy
 pymysql
 requests
-json
-enum
