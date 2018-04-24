@@ -11,7 +11,7 @@ It covers the following use-cases:-
 
 - This short url should be used only once.
  
- In case of multiple concurrent requests trying to access the same short url, only the first request should be redirected and the url should be expired. 
+- In case of multiple concurrent requests trying to access the same short url, only the first request should be redirected and the url should be expired. 
  
  All the rest of the requests should error out.
   
@@ -20,8 +20,8 @@ Build & Run Instructions
 --------------------
 
 Prerequisites:
-   - Python, 
-   - Git,
+   - Python
+   - Git
    - pip
 
 **Clone Repository:-**
