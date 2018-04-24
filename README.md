@@ -87,3 +87,19 @@ StatusCode : 404
 {"message": "not found"}
 ```
 
+Data Model:
+-----------------
+
+
+- Table : `urlinfo`
+
+| Field          | Type          | Null | Key | Default | Extra |
+|----------------|---------------|------|-----|---------|-------|
+| url_id         | INT           | NO   | PRI | NULL    |       |
+| status         | VARCHAR(32)   |      |     | NULL    |       |
+| long_url       | VARCHAR(2048) |      |     | NULL    |       |
+| created_time   | DATETIME      |      |     | NULL    |       |
+| updated_time   | DATETIME      |      |     | NULL    |       |
+| short_url      | VARCHAR(32)   |      | UNI | NULL    |       |
+
+
